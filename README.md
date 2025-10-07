@@ -4,7 +4,7 @@ A lightweight proxy tool to access private AWS API Gateways (or other internal h
 
 ## Architecture
 
-![Architecture Overview](docs/images/overview.png)
+![Architecture Overview](docs/images/overview.jpg)
 
 The local proxy server invokes a Lambda function in your VPC, which forwards requests to your private API Gateway (or other internal AWS components) and returns the response.
 
