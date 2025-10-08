@@ -228,7 +228,7 @@ func runProxy() {
 	// Create HTTP server with path parameters
 	mux := http.NewServeMux()
 
-	mux.HandleFunc("POST /api_url/{path...}", proxy.handler)
+	mux.HandleFunc("/api_url/{path...}", proxy.handler)
 
 	server := &http.Server{
 		Addr:    fmt.Sprintf(":%d", *port),
